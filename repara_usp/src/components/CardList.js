@@ -13,6 +13,8 @@ const CardList = ({ problemas }) => {
 							image={problemas[i].image}
           					category={problemas[i].category}
           					description={problemas[i].description}
+          					local={problemas[i].local}
+          					date={problemas[i].date}
           				/>
 					);
 				})

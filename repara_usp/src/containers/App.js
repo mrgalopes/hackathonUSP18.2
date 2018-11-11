@@ -26,8 +26,8 @@ class App extends Component {
           <ButtonGroup>
             <Button className="f6 link dim ph3 pv2 mb2 dib white bg-black" color="primary" onClick={() => this.onRadioBtnClick(1)} active={this.state.pagina === 1}>Avaliando</Button>
             <Button className="f6 link dim ph3 pv2 mb2 dib white bg-yellow" color="primary" onClick={() => this.onRadioBtnClick(2)} active={this.state.pagina === 2}>Processando</Button>
-            <Button color="primary" onClick={() => this.onRadioBtnClick(3)} active={this.state.pagina === 3}>Concluído</Button>
-            <Button color="primary" onClick={() => this.onRadioBtnClick(4)} active={this.state.pagina === 4}>Estatísticas</Button>
+            <Button className="f6 link dim ph3 pv2 mb2 dib white bg-green" color="primary" onClick={() => this.onRadioBtnClick(3)} active={this.state.pagina === 3}>Concluído</Button>
+            <Button className="f6 link dim ph3 pv2 mb2 dib white bg-blue" color="primary" onClick={() => this.onRadioBtnClick(4)} active={this.state.pagina === 4}>Estatísticas</Button>
           </ButtonGroup>
         </header>
         <CardList problemas={problemas} />
