@@ -3,6 +3,7 @@ import './App.css';
 import { problemas } from '../problemas';
 import CardList from '../components/CardList';
 import { Button, ButtonGroup } from 'reactstrap';
+import logo from './logo8.jpg'
 
 class App extends Component {
   constructor(props) {
@@ -19,8 +20,8 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <div>
-            <h1>ReparaUSP</h1>
+          <div className= "Logo">
+            <img src={logo} alt="logo" class="Right" />
             <a><img/></a>
           </div>
           <ButtonGroup>
