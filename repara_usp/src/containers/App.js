@@ -52,9 +52,7 @@ class App extends Component {
                 <Button color="primary" onClick={() => this.onRadioBtnClick(4)} active={this.state.pagina === 4}>Estatísticas</Button>
               </ButtonGroup>
             </header>
-            <div className="dib">
-            <img scr={logo} />
-            </div>
+            
             <p>Nos últimos 12 meses, foram consertados:</p>
             <div className="dib center ma2 ba overflow-auto">
             <table class="tg tc striped--light-gray pa2 mw8">
@@ -76,6 +74,9 @@ class App extends Component {
               </tr>
             </table>
             </div>
+            <header>
+              <img src="https://i.imgur.com/qmnrGZM.jpg" />
+            </header>
           </div>
         );
     }
