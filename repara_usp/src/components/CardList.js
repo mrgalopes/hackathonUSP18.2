@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from './Card';
-import { problemas } from '../problemas'
 
 const CardList = ({ problemas }) => {
 	return (
@@ -10,11 +9,14 @@ const CardList = ({ problemas }) => {
 					return (
 						<Card
 							key={i}
+							id = {problemas[i].id}
 							image={problemas[i].image}
           					category={problemas[i].category}
           					description={problemas[i].description}
           					local={problemas[i].local}
-          					date={problemas[i].date}
+          					dateSubmitted={problemas[i].dateSubmitted}
+          					upvotes = {problemas[i].upvotes}
+          					downvotes = {problemas[i].downvotes}
           				/>
 					);
 				})

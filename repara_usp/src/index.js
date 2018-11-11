@@ -5,6 +5,7 @@ import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
 import 'tachyons';
 import './components/Card.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
